@@ -1,46 +1,163 @@
-.reports-container{
-padding:20px;
+.reports-page{
+padding:24px;
 }
 
-.reports-title{
-color:#2563eb;
+.reports-page h2{
+color:#145A32;
 margin-bottom:20px;
 }
 
-.tabs{
+/* TABS */
+
+.report-tabs{
+display:flex;
+gap:30px;
+background:#f3e0c9;
+padding:12px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.report-tabs button{
+background:none;
+border:none;
+font-size:16px;
+cursor:pointer;
+color:#8E6C00;
+font-weight:600;
+}
+
+.report-tabs button.active{
+border-bottom:3px solid #D4AF37;
+color:#145A32;
+}
+
+/* LAYOUT */
+
+.report-layout{
 display:flex;
 gap:20px;
-margin-bottom:20px;
 }
 
-.tabs button{
-background:#f3e0c9;
-padding:10px 20px;
+/* FILTERS */
+
+.filters-card{
+width:260px;
+background:#F8FBF9;
+padding:20px;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(11,61,46,0.15);
+}
+
+.filters-card label{
+display:block;
+margin-top:10px;
+font-size:13px;
+color:#145A32;
+}
+
+.filters-card select,
+.filters-card input{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #D4AF37;
+border-radius:6px;
+}
+
+/* REPORT CARD */
+
+.report-card{
+flex:1;
+background:#F8FBF9;
+padding:20px;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(11,61,46,0.15);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:#E8F5E9;
+}
+
+th,td{
+padding:12px;
+text-align:left;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+}
+
+/* BUTTONS */
+
+.btn{
+padding:8px 14px;
+border-radius:8px;
 border:none;
 cursor:pointer;
+font-weight:600;
 }
 
-.reports-layout{
-display:flex;
-gap:20px;
+.btn.primary{
+background:#D4AF37;
+color:black;
 }
 
-.filters{
-width:250px;
-background:#f3e0c9;
-padding:15px;
-border-radius:8px;
-}
-
-.report-content{
-flex:1;
-background:#f3e0c9;
-padding:15px;
-border-radius:8px;
+.btn.ghost{
+background:#E8F5E9;
+border:1px solid #145A32;
+color:#145A32;
 }
 
 .export-buttons{
-margin-top:15px;
+margin-top:10px;
 display:flex;
 gap:10px;
+}
+
+/* SALES */
+
+.sales-card{
+background:#F8FBF9;
+padding:20px;
+border-radius:14px;
+}
+
+/* GST */
+
+.gst-summary{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.gst-card{
+background:#F8FBF9;
+padding:18px;
+border-radius:12px;
+border-left:4px solid #D4AF37;
+}
+
+/* CASH */
+
+.cash-layout{
+display:flex;
+gap:20px;
+}
+
+.cash-card{
+background:#F8FBF9;
+padding:20px;
+border-radius:12px;
+width:300px;
+}
+
+.closing{
+font-weight:700;
+color:#145A32;
 }
