@@ -1,0 +1,113 @@
+.billing-page{
+padding:24px;
+font-family:Inter;
+}
+
+.billing-page h2{
+color:#145A32;
+margin-bottom:20px;
+}
+
+.billing-grid{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+}
+
+.search-card,
+.customer-card,
+.cart-card,
+.summary-card{
+background:#F8FBF9;
+padding:20px;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(11,61,46,0.15);
+}
+
+.cart-card{
+margin-top:20px;
+}
+
+.summary-card{
+margin-top:20px;
+width:350px;
+}
+
+input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #D4AF37;
+margin-bottom:10px;
+}
+
+button{
+padding:8px 14px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+font-weight:600;
+}
+
+.product-row{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:#E8F5E9;
+}
+
+th,td{
+padding:12px;
+text-align:left;
+}
+
+tbody tr{
+border-bottom:1px solid #E0E0E0;
+}
+
+.estimate-btn{
+background:#3B82F6;
+color:white;
+width:100%;
+margin-top:10px;
+}
+
+.final-btn{
+background:#22C55E;
+color:white;
+width:100%;
+margin-top:10px;
+}
+
+.customer-results{
+max-height:120px;
+overflow-y:auto;
+border:1px solid #ddd;
+border-radius:6px;
+margin-bottom:10px;
+}
+
+.customer-item{
+padding:6px 10px;
+cursor:pointer;
+}
+
+.customer-item:hover{
+background:#E8F5E9;
+}
+input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #D4AF37;
+margin-bottom:10px;
+box-sizing:border-box;
+}

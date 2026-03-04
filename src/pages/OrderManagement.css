@@ -1,0 +1,200 @@
+.order-page {
+  padding: 24px;
+}
+
+.order-page h2 {
+  color: #145A32; /* emerald */
+  margin-bottom: 20px;
+}
+
+/* STATUS CARDS */
+.order-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.status-card {
+  background: #F1F8F4; /* light emerald tint */
+  padding: 16px;
+  border-radius: 10px;
+  border-left: 6px solid;
+}
+
+.status-card p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8E6C00; /* soft gold */
+}
+
+.status-card h2 {
+  margin: 6px 0 0;
+  color: #0B3D2E; /* dark emerald */
+}
+
+/* COLORS */
+.status-card.orange { border-color: #D4AF37; } /* gold */
+.status-card.blue { border-color: #145A32; }   /* emerald */
+.status-card.green { border-color: #1E8449; }  /* emerald */
+.status-card.red { border-color: #B7950B; }    /* deep gold */
+
+/* TABLE CARD */
+.order-table-card {
+  background: #F8FBF9;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.order-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.order-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.order-controls input,
+.order-controls select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #D4AF37; /* gold border */
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #E8F5E9; /* light emerald */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  color: #145A32;
+}
+
+tbody tr {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+/* STATUS TAG */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* status colors */
+.status.pending {
+  background: #FFF8E1;
+  color: #B7950B;
+}
+
+.status.in-progress {
+  background: #E8F5E9;
+  color: #145A32;
+}
+
+.status.completed {
+  background: #DFF5E3;
+  color: #1E8449;
+}
+
+.status.overdue {
+  background: #FDEBD0;
+  color: #9A7D0A;
+}
+
+/* ACTIONS */
+.actions svg {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #145A32;
+}
+
+/* MODAL */
+.order-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(11,61,46,0.45); /* emerald overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 15px 30px rgba(11,61,46,0.2);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #145A32;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #D4AF37;
+}
+
+.modal-actions {
+  margin-top: 16px;
+  text-align: right;
+}
+/* ===== BUTTON THEME FIX ===== */
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* GOLD PRIMARY BUTTON */
+.btn.primary {
+  background: #D4AF37;
+  color: black;
+}
+
+.btn.primary:hover {
+  background: #B7950B;
+}
+
+/* EMERALD GHOST BUTTON */
+.btn.ghost {
+  background: #E8F5E9;
+  color: #145A32;
+  border: 1px solid #145A32;
+}
+
+.btn.ghost:hover {
+  background: #DFF5E3;
+}

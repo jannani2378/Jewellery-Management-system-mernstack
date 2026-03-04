@@ -1,0 +1,103 @@
+/* RESET */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* FULL PAGE BACKGROUND */
+.login-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(
+    135deg,
+    #0B3D2E 0%,
+    #145A32 40%,
+    #1E8449 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* CARD */
+.login-card {
+  background: #ffffff;
+  width: 360px;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(11, 61, 46, 0.25);
+}
+
+/* Brand */
+.brand {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #145A32; /* emerald */
+  margin: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #8E6C00; /* soft gold */
+  margin-bottom: 28px;
+}
+
+/* Form */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0B3D2E;
+}
+
+.login-card input {
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #D4AF37; /* gold border */
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #145A32;
+  box-shadow: 0 0 0 2px rgba(20, 90, 50, 0.2);
+}
+
+/* Error */
+.error {
+  font-size: 13px;
+  color: #B7950B; /* deep gold instead of red */
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Button */
+.login-card button {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #D4AF37; /* gold */
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-card button:hover {
+  background: #B7950B;
+}

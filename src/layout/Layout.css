@@ -1,0 +1,113 @@
+/* Layout.css — emerald & gold theme */
+
+/* Ensure layout covers entire viewport */
+.layout-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background: #F4F6F6; /* light neutral */
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: linear-gradient(180deg, #0B3D2E, #145A32); /* emerald gradient */
+  color: white;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 4px 0 12px rgba(11,61,46,0.25); /* emerald shadow */
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #D4AF37; /* gold */
+}
+
+/* menu */
+.menu { list-style: none; padding: 0; margin: 0; }
+
+.menu li {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.22s;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #FDFEFE;
+  padding: 11px 12px;
+  display: block;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* gold hover highlight */
+.menu li:hover a {
+  background: rgba(212,175,55,0.18);
+  transform: translateX(4px);
+}
+
+.menu li.active a {
+  background: rgba(212,175,55,0.28);
+  font-weight: 700;
+  transform: translateX(4px);
+}
+
+/* admin box */
+.admin-box {
+  background: rgba(212,175,55,0.15); /* gold tint */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #D4AF37;
+}
+
+/* main content */
+.main-content {
+  flex: 1;
+  padding: 18px 22px;
+  overflow-y: auto;
+  background: #E8F5E9; /* very light emerald */
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .sidebar { width: 200px; }
+}
+/* ===== GOLD TICKER GLOBAL ===== */
+
+.gold-ticker {
+  background: linear-gradient(90deg,#0B3D2E,#145A32);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.gold-ticker-track {
+  white-space: nowrap;
+  color: #D4AF37;
+  font-weight: 600;
+  padding-left: 100%;
+  animation: ticker 35s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
