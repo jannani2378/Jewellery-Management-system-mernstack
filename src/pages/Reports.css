@@ -7,8 +7,6 @@ color:#145A32;
 margin-bottom:20px;
 }
 
-/* TABS */
-
 .report-tabs{
 display:flex;
 gap:30px;
@@ -32,14 +30,10 @@ border-bottom:3px solid #D4AF37;
 color:#145A32;
 }
 
-/* LAYOUT */
-
 .report-layout{
 display:flex;
 gap:20px;
 }
-
-/* FILTERS */
 
 .filters-card{
 width:260px;
@@ -65,8 +59,6 @@ border:1px solid #D4AF37;
 border-radius:6px;
 }
 
-/* REPORT CARD */
-
 .report-card{
 flex:1;
 background:#F8FBF9;
@@ -78,6 +70,7 @@ box-shadow:0 6px 16px rgba(11,61,46,0.15);
 table{
 width:100%;
 border-collapse:collapse;
+margin-top:15px;
 }
 
 thead{
@@ -92,8 +85,6 @@ text-align:left;
 tbody tr{
 border-bottom:1px solid #eee;
 }
-
-/* BUTTONS */
 
 .btn{
 padding:8px 14px;
@@ -115,49 +106,7 @@ color:#145A32;
 }
 
 .export-buttons{
-margin-top:10px;
+margin-top:15px;
 display:flex;
 gap:10px;
-}
-
-/* SALES */
-
-.sales-card{
-background:#F8FBF9;
-padding:20px;
-border-radius:14px;
-}
-
-/* GST */
-
-.gst-summary{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.gst-card{
-background:#F8FBF9;
-padding:18px;
-border-radius:12px;
-border-left:4px solid #D4AF37;
-}
-
-/* CASH */
-
-.cash-layout{
-display:flex;
-gap:20px;
-}
-
-.cash-card{
-background:#F8FBF9;
-padding:20px;
-border-radius:12px;
-width:300px;
-}
-
-.closing{
-font-weight:700;
-color:#145A32;
 }
