@@ -177,17 +177,74 @@ export default function StockManagement() {
           <div className="modal-box">
             <h3>{editingStock ? "Edit Stock" : "Add New Stock"}</h3>
 
-            {Object.keys(form).map((key) => (
-              <input
-                key={key}
-                placeholder={key}
-                value={form[key]}
-                onChange={(e) =>
-                  setForm({ ...form, [key]: e.target.value })
-                }
-              />
-            ))}
+            
+            <div className="form-grid">
 
+              <div className="form-group">
+                <label>Product</label>
+                <input
+                  value={form.product}
+                  onChange={(e)=>setForm({...form, product:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Category</label>
+                <input
+                  value={form.category}
+                  onChange={(e)=>setForm({...form, category:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>HUID</label>
+                <input
+                  value={form.huid}
+                  onChange={(e)=>setForm({...form, huid:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Gross Weight (g)</label>
+                <input
+                  value={form.grossWt}
+                  onChange={(e)=>setForm({...form, grossWt:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Net Weight (g)</label>
+                <input
+                  value={form.netWt}
+                  onChange={(e)=>setForm({...form, netWt:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Purity</label>
+                <input
+                  value={form.purity}
+                  onChange={(e)=>setForm({...form, purity:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Value (₹)</label>
+                <input
+                  value={form.value}
+                  onChange={(e)=>setForm({...form, value:e.target.value})}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Quantity</label>
+                <input
+                  value={form.quantity}
+                  onChange={(e)=>setForm({...form, quantity:e.target.value})}
+                />
+              </div>
+
+            </div>
             <div className="modal-actions">
               <button className="btn primary" onClick={saveStock}>
                 Save
