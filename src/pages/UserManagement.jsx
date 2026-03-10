@@ -198,9 +198,7 @@ export default function UserManagement() {
             />
           </div>
 
-          <button className="btn small filter-btn" onClick={() => setShowFilter(true)}>
-            <FaFilter /> Filter
-          </button>
+        
 
           <button className="btn small ghost" onClick={exportCSV}>
             <FaFileExport /> Export
@@ -280,16 +278,19 @@ export default function UserManagement() {
 
             <label>Joined date</label>
             <input
+              type="date"
               value={form.date}
               onChange={(e) => setForm({ ...form, date: e.target.value })}
-              placeholder="DD MMM YYYY"
             />
 
             {/* NEW: SCREEN ACCESS */}
+            
+
             <label>Screen Access</label>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+
+            <div className="access-grid">
               {SCREENS.map((screen) => (
-                <label key={screen}>
+                <label key={screen} className="access-item">
                   <input
                     type="checkbox"
                     checked={form.access.includes(screen)}
@@ -299,7 +300,6 @@ export default function UserManagement() {
                 </label>
               ))}
             </div>
-
             <div className="modal-actions">
               <button className="btn primary" onClick={saveForm}>
                 {editingUser ? "Save" : "Add"}
