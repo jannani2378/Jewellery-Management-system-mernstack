@@ -135,3 +135,28 @@ tbody tr {
   gap: 10px;
   margin-top: 16px;
 }
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:10px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+}
+
+.form-group label{
+font-size:13px;
+font-weight:600;
+color:#145A32;
+margin-bottom:4px;
+}
+
+.form-group input{
+padding:10px;
+border-radius:8px;
+border:1px solid #D4AF37;
+background:#FAFAFA;
+}
